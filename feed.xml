@@ -5,13 +5,12 @@
         <description><![CDATA[Персональный блог программиста, делающего всякие штуки на PHP и Yii]]></description>
         <link>http://dmeroff.ru</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 03 Apr 2015 15:26:30 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Apr 2015 15:30:21 GMT</lastBuildDate>
         <atom:link href="http://dmeroff.ru/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 03 Apr 2015 15:26:24 GMT</pubDate>
+        <pubDate>Fri, 03 Apr 2015 15:30:15 GMT</pubDate>
         <item>
             <title><![CDATA[Перезагрузка блога]]></title>
-            <description><![CDATA[<p>В очередной раз я перезапускаю свой блог, теперь на новом движке. Надеюсь, это
-даст мне толчок писать больше и лучше.</p>
+            <description><![CDATA[<p>В очередной раз я перезапускаю свой блог, теперь на новом движке.</p>
 <h2 id="-">О будущем блога</h2>
 <p>Мне хотелось писать в блог хотя бы один раз в месяц. То есть, до конца года
 в блоге должно появиться еще как минимум 8 постов. Также очень бы хотелось начать
