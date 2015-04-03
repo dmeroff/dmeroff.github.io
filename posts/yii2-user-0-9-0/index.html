@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Релиз Yii2-user 0.9.0</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="Персональный блог программиста, делающего всякие штуки на PHP и Yii" name="description">
+  <meta content="yii2, yii2-user, dektrium, yii framework, yii, dmeroff, php" name="keywords">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/dmeroff">
+  <meta name="generator" content="DocPad v6.78.1" />
+  <link  rel="stylesheet" href="/styles/styles.css" /><link  rel="stylesheet" href="/styles/highlight.css" />
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-xs-6">
+            
+            <a href='/'><h2>Блог Дмитрия Ерофеева</h2></a>
+            
+        </div>
+        <div class="col-xs-6" style="text-align: right">
+            <nav>
+                <ul class="top-menu">
+                    <li class="top-menu-item">
+                        <a href="/about">Обо мне</a>
+                    </li>
+                    <li class="top-menu-item">
+                        <a href="https://github.com/dmeroff" target="_blank"><i class="fa fa-github"></i> Github</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
+    <article class="post">
+    <h1 class="post-title">Релиз Yii2-user 0.9.0</h1>
+    <div class="post-text">
+        <p>Несколько дней назад произошло очень важное событие — а именно выход новой версии
+<a href="https://github.com/dektrium/yii2-user">Yii2-user</a> под номером 0.9.0. Этот релиз
+привнёс некоторые возможности, но главные улучшения произошли под капотом. Стоит
+отметить, что уже даже вышла патч-версия 0.9.1, исправляющая баг в переопределении моделей.</p>
+<h2 id="-">Новые возможности</h2>
+<p>Во-первых, была улучшена система смены почтового адреса пользователя. Теперь существует три режима работы:</p>
+<ul>
+<li>Небезопасный режим: почтовый адрес меняется сразу без какого-либо подтверждения.</li>
+<li>Нормальный режим: на новый адрес отправляется ссылка для подтверждения.</li>
+<li>Безопасный режим: ссылка для подтверждения отправляется как на новый так и на старый адреса.</li>
+</ul>
+<p>Во-вторых, интерфейс администратора претерпел изменения: были убраны нестандартные кнопки в GridView, улучшены страницы создания и редактирования пользователей.</p>
+<p>В-третьих, переработаны flash сообщения, их теперь можно отключить, если, например, у вас есть собственный компонент или виджет, выводящий такие сообщения.</p>
+<p>В-четвёртых, добавлена AJAX-валидация для всех форм, используемых модулем.</p>
+<p>В-пятых, теперь можно конфигурировать заголовки писем, отправляемых модулем.</p>
+<h2 id="-">Изменения под капотом</h2>
+<p>Модуль перестал автоматически регистрироваться в приложении, что улучшило возможности для интеграции в advanced-like приложения.</p>
+<p>Система переопределения моделей была полностью переработана: был выброшен ModelManager, вместо него теперь используется нормальный Dependency Injection.</p>
+<p>Также была добавлена поддержка для хранения IPv6 адресов и выброшен Mailcatcher из зависимостей для тестового окружения.</p>
+<h2 id="-">Планы на будущее</h2>
+<p>Надеюсь как можно скорее выпустить новое расширение <strong><a href="https://github.com/dektrium/yii2-rbac">Yii2-rbac</a></strong>, которое добавит возможность управлять системой прав и ролей через удобный веб-интерфейс.</p>
+<p>Следующим минорным релизом <strong>Yii2-user</strong> станет версия 1.0.0-alpha. Да, релиз стабильной версии уже близко. В альфу должны войти следующие фичи:</p>
+<ul>
+<li>Загрузка аватарки для профиля</li>
+<li>Управление временной зоной профиля</li>
+<li>Быстрая регистрация через социальные сети (логин и email будут браться из данных, предоставленных сетью)</li>
+<li>Кнопка выхода из всех аккаунтов</li>
+<li>Поддержка событий</li>
+</ul>
+
+    </div>
+    <div class="post-meta">
+        <time datetime="Thu Jan 01 2015 00:00:00 GMT+0300 (MSK)">1 января 2015 г.</time>
+    </div>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'dmeroff';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</article>
+    <footer>
+        <div class="row">
+            <div class="col-xs-6">
+                <p><i class="fa fa-copyright"></i> Дмитрий Ерофеев 2015</p>
+            </div>
+            <div class="col-xs-6" style="text-align: right">
+                <p>Сделано на <a href="http://docpad.org" target="_blank">Докпаде</a></p>
+            </div>
+        </div>
+
+    </footer>
+  </div>
+  
+  <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23893612 = new Ya.Metrika({ id:23893612, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="//mc.yandex.ru/watch/23893612" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</body>
+</html>
